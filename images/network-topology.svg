@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Lightning Network Topology</text>
+  <text x="300" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#555">Multi-hop Payment Routes</text>
+  
+  <!-- Node A -->
+  <circle cx="150" cy="200" r="40" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+  <text x="150" y="205" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white" font-weight="bold">A</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Source Node</text>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Port: 9735</text>
+  
+  <!-- Node B -->
+  <circle cx="300" cy="120" r="40" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+  <text x="300" y="125" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white" font-weight="bold">B</text>
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Intermediate Node</text>
+  <text x="300" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Port: 9736</text>
+  
+  <!-- Node C -->
+  <circle cx="450" cy="200" r="40" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+  <text x="450" y="205" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white" font-weight="bold">C</text>
+  <text x="450" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Destination Node</text>
+  <text x="450" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Port: 9737</text>
+  
+  <!-- Node D -->
+  <circle cx="300" cy="280" r="40" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+  <text x="300" y="285" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white" font-weight="bold">D</text>
+  <text x="300" y="330" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Intermediate Node</text>
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Port: 9738</text>
+  
+  <!-- Channels -->
+  <!-- A to B Channel -->
+  <line x1="180" y1="175" x2="270" y2="145" stroke="#e74c3c" stroke-width="4"/>
+  <text x="225" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c" font-weight="bold">Channel 1</text>
+  
+  <!-- B to C Channel -->
+  <line x1="330" y1="145" x2="420" y2="175" stroke="#e74c3c" stroke-width="4"/>
+  <text x="375" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c" font-weight="bold">Channel 2</text>
+  
+  <!-- A to D Channel -->
+  <line x1="180" y1="225" x2="270" y2="255" stroke="#e74c3c" stroke-width="4"/>
+  <text x="225" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c" font-weight="bold">Channel 3</text>
+  
+  <!-- D to C Channel -->
+  <line x1="330" y1="255" x2="420" y2="225" stroke="#e74c3c" stroke-width="4"/>
+  <text x="375" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c" font-weight="bold">Channel 4</text>
+  
+  <!-- Payment Routes -->
+  <path d="M150,200 C200,150 250,120 300,120 C350,120 400,150 450,200" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <text x="300" y="100" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#27ae60" font-weight="bold">Payment Route 1: A→B→C</text>
+  
+  <path d="M150,200 C200,250 250,280 300,280 C350,280 400,250 450,200" stroke="#8e44ad" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8e44ad" font-weight="bold">Payment Route 2: A→D→C</text>
+  
+  <!-- Legend -->
+  <rect x="450" y="320" width="120" height="60" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <line x1="460" y1="335" x2="490" y2="335" stroke="#e74c3c" stroke-width="4"/>
+  <text x="510" y="340" font-family="Arial, sans-serif" font-size="12">Channel</text>
+  <line x1="460" y1="355" x2="490" y2="355" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="510" y="360" font-family="Arial, sans-serif" font-size="12">Route 1</text>
+  <line x1="460" y1="375" x2="490" y2="375" stroke="#8e44ad" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="510" y="380" font-family="Arial, sans-serif" font-size="12">Route 2</text>
+</svg>
