@@ -63,11 +63,11 @@ chmod +x scripts/setup_bitcoin.sh
 ./scripts/setup_bitcoin.sh
 ```
 This script will:
-- i).Download Bitcoin Core v27.0
-- ii).Extract the files
-- iii). Install Bitcoin Core to /usr/local/bin/
-- iv).Create the configuration directory
-- v).Copy the Bitcoin configuration file
+- Download Bitcoin Core v27.0
+- Extract the files
+- Install Bitcoin Core to /usr/local/bin/
+- Create the configuration directory
+- Copy the Bitcoin configuration file
 
 
 Step 4: Install Go and LND
@@ -80,11 +80,11 @@ chmod +x scripts/setup_lnd.sh
 ```
 
  This script will:
-- i).Download and install Go 1.22.6
-- ii).Set up Go environment variables
-- iii).Clone and build LND from source
-- iv).Create directories for the four LND nodes
-- v).Copy the configuration files for each node
+- Download and install Go 1.22.6
+- Set up Go environment variables
+- Clone and build LND from source
+- Create directories for the four LND nodes
+- Copy the configuration files for each node
 
 
 Step 5: Start Bitcoin Core in Regtest Mode
@@ -107,19 +107,19 @@ chmod +x scripts/create_channels.sh
 ```
 
 
-# This script will:
+This script will:
 
-i).Start all four LND nodes (A, B, C, D)
-ii).Create wallets for each node (you'll need to set passwords and save the recovery seeds)
-iii).Generate Bitcoin addresses for each node
-iv).Mine initial blocks and send funds to each node
-v).Connect the nodes to form the network topology
-vi).Open channels between:
+- Start all four LND nodes (A, B, C, D)
+- Create wallets for each node (you'll need to set passwords and save the recovery seeds)
+- Generate Bitcoin addresses for each node
+- Mine initial blocks and send funds to each node
+- Connect the nodes to form the network topology
+- Open channels between:
 
-  Node A and Node B
-  Node B and Node C
-  Node A and Node D
-  Node D and Node C
+  - Node A and Node B
+  - Node B and Node C
+  - Node A and Node D
+  - Node D and Node C
 
 
 Step 7: Test Multi-hop Payments
@@ -131,13 +131,13 @@ chmod +x scripts/payment_routing.sh
 ./scripts/payment_routing.sh
 ```
 
-# This script will:
+This script will:
 
-i).Generate a payment invoice on Node C
-ii).Pay the invoice from Node A, which will route through other nodes
-iii).Demonstrate Multi-path Payment (MPP) by creating a larger invoice
-iv).Demonstrate Atomic Multi-path Payment (AMP) with another invoice
-v).Compare the differences between MPP and AMP approaches
+- Generate a payment invoice on Node C
+- Pay the invoice from Node A, which will route through other nodes
+- Demonstrate Multi-path Payment (MPP) by creating a larger invoice
+- Demonstrate Atomic Multi-path Payment (AMP) with another invoice
+- Compare the differences between MPP and AMP approaches
 
 Checking Node Status
 ```bash
