@@ -40,7 +40,7 @@ git clone https://github.com/yourusername/bitcoin-lightning-network-setup.git
 # Navigate to the project directory
 cd bitcoin-lightning-network-setup
 ```
-Step 2: Install Prerequisites
+### Step 2: Install Prerequisites
 For Ubuntu/Debian:
  ```bash
 # Update your system
@@ -54,7 +54,7 @@ sudo apt install -y git curl jq build-essential
 sudo apt install -y autoconf libtool pkg-config libboost-all-dev libssl-dev libevent-dev
  ```
 
-Step 3: Install Bitcoin Core
+### Step 3: Install Bitcoin Core
 ```bash
 # Make the script executable
 chmod +x scripts/setup_bitcoin.sh
@@ -70,7 +70,7 @@ This script will:
 - Copy the Bitcoin configuration file
 
 
-Step 4: Install Go and LND
+### Step 4: Install Go and LND
 ```bash
 # Make the script executable
 chmod +x scripts/setup_lnd.sh
@@ -87,7 +87,7 @@ chmod +x scripts/setup_lnd.sh
 - Copy the configuration files for each node
 
 
-Step 5: Start Bitcoin Core in Regtest Mode
+### Step 5: Start Bitcoin Core in Regtest Mode
 ```bash
 # Start Bitcoin Core in regtest mode
 bitcoind -regtest -daemon
@@ -97,7 +97,7 @@ bitcoin-cli -regtest getblockchaininfo
 
 ```
 
-Step 6: Set Up Lightning Network Nodes and Channels
+### Step 6: Set Up Lightning Network Nodes and Channels
 ```bash
 # Make the script executable
 chmod +x scripts/create_channels.sh
@@ -122,7 +122,7 @@ This script will:
   - Node D and Node C
 
 
-Step 7: Test Multi-hop Payments
+### Step 7: Test Multi-hop Payments
 ```bash
 # Make the script executable
 chmod +x scripts/payment_routing.sh
