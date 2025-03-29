@@ -62,12 +62,12 @@ chmod +x scripts/setup_bitcoin.sh
 # Run the Bitcoin Core installation script
 ./scripts/setup_bitcoin.sh
 ```
-# This script will:
-i).Download Bitcoin Core v27.0
-ii).Extract the files
-iii). Install Bitcoin Core to /usr/local/bin/
-iv).Create the configuration directory
-v).Copy the Bitcoin configuration file
+This script will:
+- i).Download Bitcoin Core v27.0
+- ii).Extract the files
+- iii). Install Bitcoin Core to /usr/local/bin/
+- iv).Create the configuration directory
+- v).Copy the Bitcoin configuration file
 
 
 Step 4: Install Go and LND
@@ -79,12 +79,12 @@ chmod +x scripts/setup_lnd.sh
 ./scripts/setup_lnd.sh
 ```
 
-# This script will:
-i).Download and install Go 1.22.6
-ii).Set up Go environment variables
-iii).Clone and build LND from source
-iv).Create directories for the four LND nodes
-v).Copy the configuration files for each node
+ This script will:
+- i).Download and install Go 1.22.6
+- ii).Set up Go environment variables
+- iii).Clone and build LND from source
+- iv).Create directories for the four LND nodes
+- v).Copy the configuration files for each node
 
 
 Step 5: Start Bitcoin Core in Regtest Mode
